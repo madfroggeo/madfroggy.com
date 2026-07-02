@@ -1,0 +1,4 @@
+use this snippet to exclude all of the ._ files: "**/._*"
+
+this website will be soon connected to the domain: madfroggy.com
+

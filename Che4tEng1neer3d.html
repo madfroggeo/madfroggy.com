@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="widthb=device-width, initial-scale=1.0">
+
+    <title>CHE4T ENG1NEER3D</title>
+    <link rel="icon" type="image/x-icon" href="MADFROGGY NEW LOGO FINAL-1.png (1).ico">
+
+    <link rel="stylesheet" href="General_game.css">
+
+</head>
+
+<body>
+
+    <!-- ===================== TOP NAV ===================== -->
+
+    <div class="top_nav">
+
+        <img class="logo"
+             src="MADFROGGY NEW LOGO FINAL-1.png (1).png"
+             alt="Logo"
+             onclick="goHome()">
+
+        <div class="home"
+             onclick="window.location.href='index.html'">
+            HOME
+        </div>
+
+        <div class="games"
+             onclick="window.location.href='index.html#games-section'">
+            GAMES
+        </div>
+
+        <div class="links"
+             onclick="window.location.href='index.html#links-section'">
+            LINKS
+        </div>
+
+    </div>
+
+    <!-- ===================== MAIN CONTENT ===================== -->
+
+    <div class="container">
+
+        <div class="content_wrapper">
+
+            <div class="container_img black_box">
+
+                <img id="frogImage"
+                     class="adfgPic"
+                     src="che4tEng1neer3d/che4tEng1neer3dFront.png"
+                     alt="Che4t Eng1neer3d">
+
+                <div class="button_row">
+
+                    <button class="arrow"
+                            onclick="prevImage()">&lt;-
+                    </button>
+
+                    <button class="arrow"
+                            onclick="nextImage()">-&gt;
+                    </button>
+
+                </div>
+
+            </div>
+            <!-- MOVE DOWNLOADS OUTSIDE ABOUT -->
+<div class="downloads_container">
+
+    <div class="downloads">
+        <h2>Downloads</h2>
+
+        <a href="che4tEng1neer3d/CHE4T ENG1NEER3D_Windows.zip" download>
+            Windows
+        </a>
+
+        <br><br>
+
+        <a href="che4tEng1neer3d/CHE4T ENG1NEER3D_macOS.zip" download>
+            Mac
+        </a>
+
+        <br><br>
+
+        <a href="che4tEng1neer3d/CHE4T ENG1NEER3D.AppImage" download>
+            Linux
+        <br><br>
+        </a>
+    </div>
+
+</div>
+
+        </div>
+
+<div class="about">
+
+    <h1 class="title">
+        CHE4T&nbsp;ENG1NEER3D
+    </h1>
+
+    <p>
+        HACK IT. OVERPOWER IT.
+        <br><br>
+        winner of the GDevelop BIG game jam #7, CHE4T ENG1NEER3D is a a cool top-down, 
+        8-bit game where you hack the game to gain the upper hand. This game was made 
+        for the GDevelop BIG Game Jam #7. I think that overall, I did pretty good for 
+        my first game jam as I was able to produce a finished product that I'm very happy with. 
+        Make sure to rate the game, and I hope that all of you enjoy!
+        <br><br>
+        Also thank you to FunnyBringus for making all of the music for the game!
+        <br><br><br>
+    </p>
+
+</div>
+
+        </div>
+
+    </div>
+
+    <!-- ===================== SCRIPT ===================== -->
+
+    <script>
+
+    const images = [
+        "che4tEng1neer3d/che4tEng1neer3dFront.png",
+        "che4tEng1neer3d/che4tEng1neer3dBack.png"
+    ];
+
+    let index = 0;
+
+    function showImage() {
+        document.getElementById("frogImage").src = images[index];
+    }
+
+    function nextImage() {
+        index = (index + 1) % images.length;
+        showImage();
+    }
+
+    function prevImage() {
+        index = (index - 1 + images.length) % images.length;
+        showImage();
+    }
+
+    function goHome() {
+        window.location.href = "index.html";
+    }
+
+    </script>
+
+</body>
+</html>
